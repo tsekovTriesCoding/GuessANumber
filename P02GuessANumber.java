@@ -18,8 +18,19 @@ public class P02GuessANumber {
             if (inputCounter == 0) {
                 System.out.println("Level " + level);
             }
+            if (level == 1) {
+                System.out.print("Guess a number (1-100): ");
+            } else if (level == 2) {
+                System.out.print("Guess a number (1-200): ");
+            } else if (level == 3) {
+                System.out.print("Guess a number (1-300): ");
+            } else if (level == 4) {
+                System.out.print("Guess a number (1-400): ");
+            } else if (level == 5) {
+                System.out.print("Guess a number (1-100): ");
+            }
 
-            System.out.print("Guess a number (1-100): ");
+
             String playerInput = scanner.nextLine();
             inputCounter++;
 
