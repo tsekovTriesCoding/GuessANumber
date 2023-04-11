@@ -6,5 +6,6 @@
 ![image](https://user-images.githubusercontent.com/129774811/231133118-5285770d-eb31-48f4-bc16-e1c8ca1d9387.png)
 
 If you enter a invalid input(a letter, etc.) the console prints "Invalid input." and wants you to enter a new VALID number.
+
 ![image](https://user-images.githubusercontent.com/129774811/231134159-251489dc-ff96-43cc-a22f-a8c47496c49b.png)
 
