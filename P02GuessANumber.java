@@ -27,7 +27,7 @@ public class P02GuessANumber {
             } else if (level == 4) {
                 System.out.print("Guess a number (1-400): ");
             } else if (level == 5) {
-                System.out.print("Guess a number (1-100): ");
+                System.out.print("Guess a number (1-500): ");
             }
 
 
