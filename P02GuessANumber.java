@@ -10,10 +10,18 @@ public class P02GuessANumber {
         Random randomNumber = new Random();
 
         int computerNumber = randomNumber.nextInt(100);
+        int level = 1;
+        int inputCounter = 0;
 
         while (true) {
+
+            if (inputCounter == 0) {
+                System.out.println("Level " + level);
+            }
+
             System.out.print("Guess a number (1-100): ");
             String playerInput = scanner.nextLine();
+            inputCounter++;
 
             int playerNumber;
 
@@ -31,7 +39,25 @@ public class P02GuessANumber {
                 playerNumber = Integer.parseInt(playerInput);
                 if (playerNumber == computerNumber) {
                     System.out.println("You guessed it!");
-                    break;
+                    if (level != 5) {
+                        System.out.println();
+                    }
+
+                    inputCounter = 0;
+
+                    if (level == 5) {
+                        break;
+                    }
+                    level++;
+                    if (level == 2) {
+                        computerNumber = randomNumber.nextInt(200);
+                    } else if (level == 3) {
+                        computerNumber = randomNumber.nextInt(300);
+                    } else if (level == 4) {
+                        computerNumber = randomNumber.nextInt(400);
+                    } else if (level == 5) {
+                        computerNumber = randomNumber.nextInt(500);
+                    }
                 } else if (playerNumber > computerNumber) {
                     System.out.println("Too High!");
                 } else {
